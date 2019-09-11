@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>O Que Abastecer?</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Insira as informações</h2>
+  <div class="ion-padding">
+    <ion-label>Gasolina/Litro </ion-label>
+    <ion-input placeholder="Digite o preço: 5.00 "[(ngModel)]="gasolina" name="gasolima"></ion-input>
+    <ion-label>Alcool/Litro</ion-label>
+    <ion-input placeholder="Digite o preço: 3.50 "[(ngModel)]="alcool" name="gasolina"></ion-input>
+    <ion-label>Resultado: {{resultado}}</ion-label>
+    <button ion-button type="submit" (click)="soma()">Calcular</button>
+
+  </div>
+
+</ion-content>
